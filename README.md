@@ -1,2 +1,2 @@
-# swift_grammer_study
+# swift_grammar_study
 Personal study project with Apple swift Document step by step !
