@@ -114,17 +114,61 @@ default:
 
 
 
+let interesingNumbers = [
+  "Prime" : [2,3,4,5,6,7] ,
+  "Fibonacci" : [1,1,2,3,5],
+  "Square" : [1,4,9,16],
+]
+
+var largest = 0
+
+for(kind , numbers) in interesingNumbers {
+  for number in numbers {
+    if number > largest {
+      largest = number
+    }
+  }
+}
+
+var n = 2
+while n < 100 {
+  n = n * 2
+}
+print(n)
+
+
+var m = 2
+
+repeat {
+  m = m * 2
+} while m < 100
 
 
 
+var total = 0
+for i in 0..<4 {
+  total += i
+}
 
 
+// Functions and Closures
+func greet(_ person:String , on day:String) -> String {
+  return "Hello \(person) , today is \(day)"
+}
 
+func greet(person: String , day:String) -> String {
+  return "Hello \(person) , today is \(day)"
+}
+func greet(person: String , day:String , lunch:String) -> String {
+  return "Hello \(person) , today is \(day)"
+}
+func greet(_ useUnderbar:Bool) {
+  
+}
 
-
-
-
-
+greet(person: "Derrick", day: "March of firstday")
+greet(person: "Derrick", day: "March of firstday", lunch: "Pizza")
+greet(true);
 
 
 
