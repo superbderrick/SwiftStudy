@@ -171,6 +171,98 @@ greet(person: "Derrick", day: "March of firstday", lunch: "Pizza")
 greet(true);
 
 
+//tuple
+
+func calculateStatistics(scores:[Int]) -> (min:Int , max: Int , sum: Int) {
+  var min = scores[0]
+  var max = scores[0]
+  var sum = 0
+  
+  for score in scores {
+    if score > max {
+      max = score
+    } else if score < min {
+      min = score
+    }
+    
+    sum += score
+  }
+  return (min , max , sum)
+  
+}
+
+
+let stat = calculateStatistics(scores: [5,3,100,4])
+print(stat.max)
+print(stat.min)
+print(stat.1)
+
+//function with array .
+
+func sumOF(numbers : Int...) -> Int {
+  var sum = 0
+  for number in numbers {
+    sum += number
+  }
+  return sum
+}
+
+
+sumOF()
+sumOF(numbers: 43,2,3)
+
+
+
+
+
+func calcaulateAvereage(numbers: Int...) -> Int {
+  var sum: Int = 0
+  var avereage: Int = 0
+  for number in numbers {
+    sum += number
+  }
+  avereage = sum / numbers.count
+  return avereage
+}
+calcaulateAvereage(numbers: 10,30,40)
+
+
+
+//“Functions are a first-class type. This means that a function can return another function as its value.”
+//sample 1
+func returnFifiteen () -> Int {
+  var y = 10
+  func add() {
+    y += 5
+  }
+  add()
+  return y
+}
+
+returnFifiteen()
+
+
+//sample 2 it seem to be same feaure like function pointer.
+
+func makeIncremeter() -> ((Int) ->Int) {
+  func addOne(number:Int) -> Int {
+      return  number + 20
+  }
+  return addOne
+}
+var increment = makeIncremeter()
+increment(5)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
