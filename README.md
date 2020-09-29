@@ -8,3 +8,5 @@ Personal study project with Apple swift Document step by step and many good tuto
 - 03 Switch , Enum , Loop
 
 - 04 Optional
+
+- 05 Class and Struct 
