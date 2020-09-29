@@ -6,3 +6,5 @@ Personal study project with Apple swift Document step by step and many good tuto
 - 02 Data type ,Any object ,Any ,nil ,Swift Collection Type
 
 - 03 Switch , Enum , Loop
+
+- 04 Optional
