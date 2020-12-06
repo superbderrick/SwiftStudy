@@ -12,3 +12,5 @@ Personal study project with Apple swift Document step by step and many good tuto
 - 05 Class and Struct 
 
 - 06 Property and Method
+    -061,062,063
+    
